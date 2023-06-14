@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet-reset" href="../normalize.css">
+        <script src="./app.js" defer></script>
+</head>
+<body>
+        <div class="background">
+                <div class="logo">
+                        <img src="./images/odin-lined.png" height="100" alt="Odin logo">
+                        <div class="logo-text">Odin</div>
+                </div>
+                <form action="." method="post">
+                        <section class="head">
+                                <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, soluta veritatis? Totam, neque eaque maxime alias vitae magni nobis eveniet deleniti fuga nesciunt adipisci in nisi aspernatur iste voluptates sit.
+                                </p>
+                                <p>
+                                        So dont <em>wait</em> and sign-up!
+                                </p>
+                        </section>
+                        <section class="user-info">
+                                <div class="first-half">
+                                        <ul>
+                                                <li>
+                                                        <label for="fname">FIRST NAME: (*)</label>
+                                                        <input type="text" id="fname" name="user-fname" required>
+                                                </li>
+                                                <li>
+                                                        <label for="email">E-MAIL: (*)</label>
+                                                        <input type="email" id="email" name="user-email" required>
+                                                </li>
+                                                <li>
+                                                        <label for="pwd">PASSWORD:(*)</label>
+                                                        <input type="password" id="pwd" name="user-password" required>
+                                                </li>
+                                                <li>
+                                                        <p class="pwd-mismatch"></p>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="second-half">
+                                        <ul>
+                                                <li>
+                                                        <label for="lname">LAST NAME:(*)</label>
+                                                        <input type="text" id="lname" name="user-lname" required>
+                                                </li>
+                                                <li>
+                                                        <label for="telephone">PHONE NUMBER</label>
+                                                        <input type="tel" id="telephone" name="user-telephone">
+                                                </li>
+                                                <li>
+                                                        <label for="confirm-pwd">CONFIRM PASSWORD: (*)</label>
+                                                        <input type="password" id="confirm-pwd" name="user-password" required>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </section>
+                        <section class="bottom">
+                                <ul>
+                                        <li>
+                                                <button type="submit"> Create account</button>
+                                        </li>
+                                        <li>
+                                                <p>Already have an account? <a href=".dkjd">Log in</a></p>
+                                        </li>
+                                </ul>
+                        </section>
+                </form>
+                <div class="photo-credit">
+                        Photo by <a href="https://unsplash.com/@usgs">USGS</a> on <a href="https://unsplash.com/">Unsplash</a>
+                </div>
+        </div>
+
+</body>
+</html>
