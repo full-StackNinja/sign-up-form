@@ -11,7 +11,7 @@ inputPassword.forEach((password) =>
   })
 );
 inputPassword.forEach((password) =>
-  password.addEventListener("blur", () => {
+  password.addEventListener("focusout", () => {
     if (pwdLength) {
       pwdLength = false;
             if (pwd.value !== "" && confirmPwd.value !== "") {
