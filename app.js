@@ -14,7 +14,7 @@ inputPassword.forEach((password) =>
   password.addEventListener("focusout", () => {
     if (pwdLength) {
       pwdLength = false;
-            if (pwd.value !== "" && confirmPwd.value !== "") {
+            if ((pwd.value.length >= 5 && pwd.value.length <= 12)){
                     if (pwd.value === confirmPwd.value) {
                             isMatched = true;
                             pwdMismatch.textContent = "";
@@ -33,8 +33,13 @@ inputPassword.forEach((password) =>
                             confirmPwd.classList.remove("matched");
                             pwd.classList.remove("matched");
                             submit.disabled = true;
-
                     }
+            }
+            else {
+                    pwdMismatch.textContent = `* Password length must be between 5 to 12 characters.`;
+                    pwdMismatch.style.color = "red";
+                    pwd.classList.add("not-matched");
+
             }
     }
   })

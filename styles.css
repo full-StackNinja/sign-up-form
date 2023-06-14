@@ -121,6 +121,9 @@ button{
 .pwd-mismatch, #pwd{
         margin: 0;
 }
+.pwd-mismatch{
+        width: 200px;
+}
 
 a{
         display: inline-block;
