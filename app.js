@@ -2,6 +2,7 @@ const pwd = document.querySelector("#pwd");
 const confirmPwd = document.querySelector("#confirm-pwd");
 const pwdMismatch = document.querySelector(".pwd-mismatch");
 const inputPassword = document.querySelectorAll("input[type=password]");
+const submit = document.querySelector('button[type=submit]');
 let pwdLength = false;
 let isMatched = false;
 inputPassword.forEach((password) =>
@@ -21,7 +22,7 @@ inputPassword.forEach((password) =>
                             pwd.classList.add("matched");
                             confirmPwd.classList.remove("not-matched");
                             pwd.classList.remove("not-matched");
-                            
+                            submit.disabled = false;
                     }
                     else {
                             isMatched = false;
@@ -31,6 +32,7 @@ inputPassword.forEach((password) =>
                             pwd.classList.add("not-matched");
                             confirmPwd.classList.remove("matched");
                             pwd.classList.remove("matched");
+                            submit.disabled = true;
 
                     }
             }
